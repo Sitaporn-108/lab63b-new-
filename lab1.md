@@ -21,11 +21,13 @@
       - พิมพ์ **:q** เพื่อออกจากตัวอย่างที่ 1
   3. ในแต่ละโปรแกรม จะมี configuration file
       - พิมพ์ **vi platformio.ini** เพื่อเข้าสู่ configuration file ของโปรแกรม
+      ![image](https://user-images.githubusercontent.com/80879429/112097678-06994380-8bd3-11eb-8312-ac04a47d448c.jpg)
         configuration file ของโปรแกรม จะบอกรายละเอียดต่างๆ ดังนี้
         * platform แสดงถึง เทคโนโลยีของบริษัทผู้ผลิต
         * board แสดงถึง ชื่อบอร์ด
         * framwork แสดงถึง วิธีการเขียนโปรแกรม
         * upload_port แสดงถึง portที่ใช้ติดต่อ  [ในกรณีนี้เป็น windows จึงแสดงว่า COM3 (หรือCOM4)]
+      
       - พิมพ์ **:q** เพื่อออกจาก configuration file
   4. อัพโหลดโปรแกรม 01_Serial-Monitor เข้าไปยังไมโครคอนโทรเลอร์ 
       - พิมพ์ **pio run -t upload** เพื่ออัพโหลด
