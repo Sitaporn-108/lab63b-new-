@@ -23,7 +23,7 @@
       ![image](https://user-images.githubusercontent.com/80879429/112097638-f84b2780-8bd2-11eb-9a2d-d2e3cc8a6ab2.jpg)
       - พิมพ์ **:q** เพื่อออกจากตัวอย่างที่ 1
       - *เนื้อหารายละเอียดของโปรแกรมที่แสดงใน platformio*
-
+```javascript
 #include <Arduino.h>
 
 int cnt = 0;
@@ -39,7 +39,8 @@ void loop()
 	Serial.printf("PATTANI :%d\n",cnt);
 	delay(1000);
 }
-
+© 2021 GitHub, Inc.
+```
   3. ในแต่ละโปรแกรม จะมี configuration file
       - พิมพ์ **vi platformio.ini** เพื่อเข้าสู่ configuration file ของโปรแกรม
       ![image](https://user-images.githubusercontent.com/80879429/112097678-06994380-8bd3-11eb-8312-ac04a47d448c.jpg)
