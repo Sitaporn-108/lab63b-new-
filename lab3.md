@@ -26,6 +26,36 @@
         - เมื่อค่า cnt เป็นเลขคู่ แสดงว่าส่งค่า 1 ไปที่ Port0 จะ **ON**
         - เมื่อค่า cnt เป็นเลขคี่ แสดงว่าส่งค่า 0 ไปที่ Port0 จะ **OFF**
         - พิมพ์ **:q** เพื่อออก
+        - *เนื้อหารายละเอียดของโปรแกรมที่แสดงใน platformio*
+
+```javascript
+#include <Arduino.h>
+#include <ESP8266WiFi.h>
+
+int cnt = 0;
+
+void setup()
+{
+	Serial.begin(115200);
+	pinMode(0, OUTPUT);
+	Serial.println("\n\n\n");
+}
+
+void loop()
+{
+	cnt++;
+	if(cnt % 2) {
+		Serial.println("========== ON ===========");
+		digitalWrite(0, HIGH);
+	} else {
+		Serial.println("========== OFF ===========");
+		digitalWrite(0, LOW);
+	}
+	delay(500);
+}
+
+© 2021 GitHub, Inc.
+```
       ![image](https://user-images.githubusercontent.com/80879429/112171570-84d30580-8c26-11eb-81dc-e81b4b7e433f.png)
    4. การอัพโหลดโปรแกรมเข้าสู่ ไมโครคอนโทรเลอร์
         - พิมพ์ **pio run -t upload** เพื่ออัพโหลด
