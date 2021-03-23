@@ -29,7 +29,7 @@
       - พิมพ์ **pio run -t upload** เพื่ออัพโหลด
       - ขณะที่โปรแกรมรัน ต้องกดปุ่มดำ(load) และปุ่มแดง(reset) ที่ไมโครคอนโทรเลอร์ เพื่อรับโปรแกรมใหม่เข้าไป
       - เมื่อรันโปรแกรมเสร็จเรียบร้อย
-      https://github.com/Sitaporn-108/lab63b-new-/issues/1
+      https://github.com/Sitaporn-108/lab63b-new-/issues/1#issue-838351717
       - พิมพ์ **pio device monitor** เพื่อดูผลลัพธ์
 
 ##  การบันทึกผลการทดลอง (พร้อมตัวอย่าง)
