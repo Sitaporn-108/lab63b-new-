@@ -31,7 +31,9 @@
       - พิมพ์ **:q** เพื่อออกจาก configuration file
   4. อัพโหลดโปรแกรม 01_Serial-Monitor เข้าไปยังไมโครคอนโทรเลอร์ 
       - พิมพ์ **pio run -t upload** เพื่ออัพโหลด
+      ![image](https://user-images.githubusercontent.com/80879429/112097793-3c3e2c80-8bd3-11eb-996e-32ca2630c4d9.jpg)
       - ขณะที่โปรแกรมรัน ต้องกดปุ่มดำ(load) และปุ่มแดง(reset) ที่ไมโครคอนโทรเลอร์ เพื่อรับโปรแกรมใหม่เข้าไป
+      
       - เมื่อรันโปรแกรมเสร็จเรียบร้อย
       ![image](https://user-images.githubusercontent.com/80879429/112096308-9db0cc00-8bd0-11eb-8e18-ad50c46ef244.png)
       - พิมพ์ **pio device monitor** เพื่อดูผลลัพธ์
