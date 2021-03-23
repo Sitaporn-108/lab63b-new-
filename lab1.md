@@ -15,6 +15,7 @@
   2. เข้าไปดูตัวอย่างโปรแกรม ในโฟลเดอร์ pattani
       - พิมพ์ **cd pattani** เพื่อเข้าสู่โฟลเดอร์
       - พิมพ์ **cd 01_Serial-Monitor** *Enter* และ **vi src/main.cpp** เพื่อเข้าสู่ตัวอย่างที่ 1 จาก 9 ตัวอย่าง
+      ![image](https://user-images.githubusercontent.com/80879429/112097457-a30f1600-8bd2-11eb-88e4-cbac8f414bb3.jpg)
       - อ่านข้อมูลรายละเอียดของโปรแกรม
       - พิมพ์ **:q** เพื่อออกจากตัวอย่างที่ 1
   3. ในแต่ละโปรแกรม จะมี configuration file
