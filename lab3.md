@@ -73,9 +73,9 @@ void loop()
       - **หาก OFF ไฟที่หลอด LED : ไม่สว่าง** 
       - **หาก ON ไฟที่หลอด LED : สว่าง**
    * เมื่อนำไมโครคอนโทรเลอร์ที่เชื่อมรีเลย์มาต่อกับแหล่งจ่ายไฟ พบว่า จะเกิดเสียงที่เกิดจากหน้าสัมผัสของสวิตซ์ไฟบนรีเลย์ทำการเปิด-ปิด พร้อมกับเกิดการสว่าง-ดับของหลอดไฟบนรีเลย์เช่นกัน
-      ![image](https://user-images.githubusercontent.com/80879429/112172691-818c4980-8c27-11eb-8f3b-77eb1db63fc3.png)
+      * ![image](https://user-images.githubusercontent.com/80879429/112172691-818c4980-8c27-11eb-8f3b-77eb1db63fc3.png)
       
-      ![image](https://user-images.githubusercontent.com/80879429/112172729-8a7d1b00-8c27-11eb-8b82-7d212fc3a8c7.png)
+      * ![image](https://user-images.githubusercontent.com/80879429/112172729-8a7d1b00-8c27-11eb-8b82-7d212fc3a8c7.png)
       
 ##  อภิปรายผลการทดลอง (พร้อมตัวอย่าง)
    * pio run -t upload นั้นใช้ในการอัพโหลดข้อมูลจาก 03_Output-Port ไปยัง microcontroller โดยคำสั่ง pio device monitor ที่ใช้ดูผลลัพธ์ของโปรแกรมที่ถูกอัพโหลดเข้าไป โดย output ที่ได้ออกมาจะสังเกตว่า ขึ้น on-off สลับกันไปในทุกๆ 500 ms
