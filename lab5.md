@@ -78,7 +78,7 @@ void loop(void){
 ```
 
 5. อัปโหลดโปรแกรม 05_Wifi-Web-Server เข้าไปยังไมโครคอนโทรเลอร์ 
-    - พิมพ์ **pio run -t upload** เพื่ออัพโหลด
+    - พิมพ์ **pio run -t upload** เพื่ออัปโหลด
     - ![image](https://user-images.githubusercontent.com/80879429/112274246-d9bb5e00-8cb0-11eb-8168-aefe0e1155b9.png)
 
     - เสียบไมโครคอนโทรเลอร์ ไปที่ USB to Serial
