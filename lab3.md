@@ -63,9 +63,11 @@ void loop()
       ![image](https://user-images.githubusercontent.com/80879429/112171624-93212180-8c26-11eb-8225-65686bc7ce07.png)
    5. พิมพ์ **pio device monitor** เพื่อดูผลลัพธ์ของการรัน 
       ![image](https://user-images.githubusercontent.com/80879429/112171669-9f0ce380-8c26-11eb-86e5-fcb832635c99.png)
+   
    6. นำไมโครคอนโทรเลอร์ที่ลงโปรแกรมรียบร้อยแล้วออกจาก Adaptor และนำมาต่อกับ Relay แทน เพื่อใช้ควบคุมการเปิดปิดสวิตซ์
    7. นำปลายสายของ Relay ซึ่งคือขั้ว USB มาเชื่อมกับ USB to Serial Port 5V เพื่อรับสัญญาณไฟเลี้ยง
       ![image](https://user-images.githubusercontent.com/80879429/112171730-ae8c2c80-8c26-11eb-9cb2-00b52f30aadd.png)
+   
    8. ทำการสังเกตสิ่งที่เกิดขึ้นกับตัวรีเลย์
 
 ##  การบันทึกผลการทดลอง (พร้อมตัวอย่าง)
