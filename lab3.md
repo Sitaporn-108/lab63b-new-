@@ -56,7 +56,8 @@ void loop()
 
 © 2021 GitHub, Inc.
 ```
-   ![image](https://user-images.githubusercontent.com/80879429/112171570-84d30580-8c26-11eb-81dc-e81b4b7e433f.png)
+
+      ![image](https://user-images.githubusercontent.com/80879429/112171570-84d30580-8c26-11eb-81dc-e81b4b7e433f.png)
    4. การอัพโหลดโปรแกรมเข้าสู่ ไมโครคอนโทรเลอร์
         - พิมพ์ **pio run -t upload** เพื่ออัพโหลด
         - กดปุ่ม upload(ดำ) ค้างไว้ และกดปุ่ม reset(แดง) เพื่อให้โปรแกรมอัพโหลดได้
