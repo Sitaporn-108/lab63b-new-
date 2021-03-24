@@ -39,8 +39,10 @@ void loop()
 	Serial.printf("PATTANI :%d\n",cnt);
 	delay(1000);
 }
+
 © 2021 GitHub, Inc.
 ```
+
   3. ในแต่ละโปรแกรม จะมี configuration file
       - พิมพ์ **vi platformio.ini** เพื่อเข้าสู่ configuration file ของโปรแกรม
       ![image](https://user-images.githubusercontent.com/80879429/112097678-06994380-8bd3-11eb-8312-ac04a47d448c.jpg)
@@ -51,7 +53,7 @@ void loop()
         * upload_port แสดงถึง portที่ใช้ติดต่อ  [ในกรณีนี้เป็น windows จึงแสดงว่า COM3 (หรือCOM4)]
       
       - พิมพ์ **:q** เพื่อออกจาก configuration file
-  4. อัพโหลดโปรแกรม 01_Serial-Monitor เข้าไปยังไมโครคอนโทรเลอร์ 
+  4. อัปโหลดโปรแกรม 01_Serial-Monitor เข้าไปยังไมโครคอนโทรเลอร์ 
       - พิมพ์ **pio run -t upload** เพื่ออัพโหลด
       ![image](https://user-images.githubusercontent.com/80879429/112097793-3c3e2c80-8bd3-11eb-996e-32ca2630c4d9.jpg)
       - ขณะที่โปรแกรมรัน ต้องกดปุ่มดำ(load)  และปุ่มแดง(reset) ที่ไมโครคอนโทรเลอร์ เพื่อรับโปรแกรมใหม่เข้าไป
