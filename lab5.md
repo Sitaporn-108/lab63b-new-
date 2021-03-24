@@ -29,6 +29,7 @@
     - ![image](https://user-images.githubusercontent.com/80879429/112274222-d32ce680-8cb0-11eb-8c5c-df39dd0e4793.png)
 
     - พิมพ์ **:q** เพื่อออก
+    - *เนื้อหารายละเอียดของโปรแกรมที่แสดงใน platformio*
 
 ```javascript
 #include <ESP8266WiFi.h>
