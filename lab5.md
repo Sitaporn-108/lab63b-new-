@@ -17,13 +17,17 @@
 1. พิมพ์ **pwd** เพื่อเข้าสู่โปรแกรมตัวอย่างที่ 6 และพิมพ์ **cd ../05_Wifi-Web-Server** กับพิมพ์ **cd ..**
 2. พิมพ์ **cd 05_Wifi-Web-Server** กับพิมพ์ **1s**
 3. พิมพ์ **vi src/main.cpp** เพื่อเข้าสู่โปรแกรม
+	 ![image](https://user-images.githubusercontent.com/80879429/112274173-c5776100-8cb0-11eb-82f8-fc3b5fc989e1.png)
+
 4. เนื่องจากต้องเชื่อมกับไวไฟ จึงต้องใส่ชื่อไวไฟ โดยโปรแกรมแบ่งเป็น 2 ส่วน
     - ส่วนที่ 1 **void set up** (บรรทัดที่15-22) การ connect กับไวไฟที่เลือกไว้
             * set up webserver แสดงผลเป็น Hello cnt
             * cnt++ หมายถึง การนับเพิ่มเรื่อยๆ
     - ส่วนที่ 2 **void loop** (บรรทัดที่39-41) 
-    - รูป
-    - รูป
+    - ![image](https://user-images.githubusercontent.com/80879429/112274203-ce683280-8cb0-11eb-882c-be85b7128e0b.png)
+
+    - ![image](https://user-images.githubusercontent.com/80879429/112274222-d32ce680-8cb0-11eb-8c5c-df39dd0e4793.png)
+
     - พิมพ์ **:q** เพื่อออก
 
 ```javascript
@@ -74,9 +78,11 @@ void loop(void){
 
 5. อัปโหลดโปรแกรม 05_Wifi-Web-Server เข้าไปยังไมโครคอนโทรเลอร์ 
     - พิมพ์ **pio run -t upload** เพื่ออัพโหลด
-    - รูป
+    - ![image](https://user-images.githubusercontent.com/80879429/112274246-d9bb5e00-8cb0-11eb-8168-aefe0e1155b9.png)
+
     - เสียบไมโครคอนโทรเลอร์ ไปที่ USB to Serial
-    - รูป
+    - ![image](https://user-images.githubusercontent.com/80879429/112274269-dde77b80-8cb0-11eb-85e8-058a3d681de0.png)
+
     - ขณะที่โปรแกรมรัน ต้องกดปุ่มดำ(load)  และปุ่มแดง(reset) ที่ไมโครคอนโทรเลอร์ เพื่อรับโปรแกรมใหม่เข้าไป
 6.เมื่ออัปโหลดเสร็จสิ้น 
     - พิมพ์ **pio device monitor** เพื่อเช็คผลลัพธ์
