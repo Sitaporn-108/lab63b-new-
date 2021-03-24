@@ -14,7 +14,7 @@
     https://youtu.be/VX-QNQcO-b4
 
 ##  วิธีการทำการทดลอง
-1. พิมพ์ **pwd** เพื่อเข้าสู่โปรแกรมตัวอย่างที่ 6 และพิมพ์ **cd ../05_Wifi-Web-Server** กับพิมพ์ **cd ..**
+1. พิมพ์ **pwd** เพื่อเข้าสู่โปรแกรมตัวอย่างที่ 5 และพิมพ์ **cd ../05_Wifi-Web-Server** กับพิมพ์ **cd ..**
 2. พิมพ์ **cd 05_Wifi-Web-Server** กับพิมพ์ **1s**
 3. พิมพ์ **vi src/main.cpp** เพื่อเข้าสู่โปรแกรม
 	 ![image](https://user-images.githubusercontent.com/80879429/112274173-c5776100-8cb0-11eb-82f8-fc3b5fc989e1.png)
