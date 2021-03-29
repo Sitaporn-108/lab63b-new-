@@ -2,12 +2,27 @@
 
 ##  วัตถุประสงค์
 
-##  อุปกรณ์ที่ใช้ (รายการอุปกรณ์)
+##  อุปกรณ์ที่ใช้
    1. ไมโครคอนโทรเลอร์ ชื่อ ESP-01 ภายในประกอบด้วย WIFI 
    2. อุปกรณ์ต่อ USB เพื่อไปยัง serial
    3. Adaptor ที่มีสาย Port 0(สีขาว) และ Port 1(สีเหลือง) ซึ่งสายทั้งหมดต่อกับ LED
 
-##  ศึกษาข้อมูลเบื้องต้น (แหล่งข้อมูลเพื่อการศึกษา)
+##  แหล่งข้อมูลเพื่อการศึกษา
+ 1. Source code แต่ละแลป (เฉพาะ แลป2, 3,และ 6)
+ 	- https://github.com/choompol-boonmee/lab63b/tree/master/examples
+ 2. Clips อธิบายรายละเอียดของแต่ละแลป (เฉพาะ แลป2, 3,และ 6)
+	- 02 run example 2 https://youtu.be/yBjab0UNuB8
+	- 03 run example 3 https://youtu.be/CCnN1WJsXQY
+	- 06 run wiri AP https://youtu.be/T26DVHePlTs
+ 3. แหล่งรวบรวม Code ที่นำมาใช้
+  	- การใช้งานเริ่มต้น ESP8266 https://blog.thaieasyelec.com/getting-started-with-esp8266-nodemcu-ch5/
+  	- การใช้งาน Arduino https://www.allnewstep.com/article/205/5-arduino-
+ 	- C Programming Part1 https://benzneststudios.com/blog/c-programming/c-programming-basic-1/
+ 	- C Programming Part2 https://benzneststudios.com/blog/c-programming/c-programming-basic-2/
+ 4. ตรวจสอบ IP Address 
+ 	- https://www.sony.co.th/th/electronics/support/articles/00022321?fbclid=IwAR3lbNJgZ47rOSlVWhLjqRq5NgUfcgHp3XDsAORXETj9ApN_oSQWddI16Ak
+ 
+
 
 ##  วิธีการทำการทดลอง
 ```javascript
