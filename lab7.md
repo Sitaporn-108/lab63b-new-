@@ -6,7 +6,7 @@
 
 //ปรับเปลี่ยน ssid และ password
 
-const char* ssid = "SITAPORN108";
+const char* ssid = "SITAPORN-EE108";
 const char* password = "6210610108";
 
 //ปรับเปลี่ยน IPAddress ให้ตรงกับ Wifiของบ้านตัวเอง
