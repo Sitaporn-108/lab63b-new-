@@ -4,10 +4,8 @@
 //#include <WiFiClient.h>
 #include <ESP8266WebServer.h>
 
-//ปรับเปลี่ยน ssid และ password
-//const char* ssid = "MY-ESP8266";
-const char* ssid = "SITA-EE108";
-const char* password = "6210610108";
+const char* ssid = "SITA-EE108";		//ปรับเปลี่ยน ssid
+const char* password = "6210610108";		//ปรับเปลี่ยน password
 
 //ปรับเปลี่ยน IPAddress ให้ตรงกับ Wifiของบ้านตัวเอง
 IPAddress local_ip(192, 168, 1, 33);    
