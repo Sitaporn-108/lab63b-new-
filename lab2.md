@@ -64,7 +64,7 @@ void loop()
    
    5. อัปโหลดโปรแกรมเข้าสู่ ไมโครคอนโทรเลอร์
    		- พิมพ์ **pio run -t upload** เพื่ออัปโหลด
-        	- ทำการกดปุ่ม upload(ดำ) ค้างไว้ และกดปุ่ม reset(แดง) เพื่อให้โปรแกรมอัปโหลดได้ 
+   		- ทำการกดปุ่ม upload(ดำ) ค้างไว้ และกดปุ่ม reset(แดง) เพื่อให้โปรแกรมอัปโหลดได้ 
   * ![image](https://user-images.githubusercontent.com/80879429/112137817-51cb4a80-8c03-11eb-8451-ca698cc56d90.png)
   * ![image](https://user-images.githubusercontent.com/80879429/112137832-57289500-8c03-11eb-9f52-3d0694655f86.png)
    6. พิมพ์ **pio device monitor** เพื่อดูผลลัพธ์ การสแกนหา WIFI 
