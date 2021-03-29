@@ -1,3 +1,15 @@
+#  การทดลองที่่ 7 เรื่อง 
+
+##  วัตถุประสงค์
+
+##  อุปกรณ์ที่ใช้ (รายการอุปกรณ์)
+   1. ไมโครคอนโทรเลอร์ ชื่อ ESP-01 ภายในประกอบด้วย WIFI 
+   2. อุปกรณ์ต่อ USB เพื่อไปยัง serial
+   3. Adaptor ที่มีสาย Port 0(สีขาว) และ Port 1(สีเหลือง) ซึ่งสายทั้งหมดต่อกับ LED
+
+##  ศึกษาข้อมูลเบื้องต้น (แหล่งข้อมูลเพื่อการศึกษา)
+
+##  วิธีการทำการทดลอง
 ```javascript
 #include <Arduino.h>
 #include <ESP8266WiFi.h>
@@ -19,7 +31,7 @@ int cnt = 0;
 
 void setup(void){
 	Serial.begin(230400);   //เพิ่มความเร็ว
-	pinMode(LED, OUTPUT);   //lab3 และปรับเปลี่ยน Pin ที่ต่อกับ LED เป็น Output
+	pinMode(0, OUTPUT);   //lab3
 
 	WiFi.mode(WIFI_STA);  //lab2
   
@@ -48,13 +60,17 @@ void loop(void){
   //lab6
   server.handleClient();
   //lab2
-  Serial.println("========== เริ่มต้นแสกนหา Wifi ===========");
+  Serial.println("========== Start Scan Wifi ===========");
 	int n = WiFi.scanNetworks();
 	if(n == 0) {
+		Serial.println("========== OFF ===========");		//lab3
+		status_led=0;                   			//กำหนดค่า ตัวแปรใน status_led=0
+		digitalWrite(0, LOW);					//lab3
 		Serial.println("NO NETWORK FOUND");
-		Serial.println("========== OFF ===========");		//lab3				
-		digitalWrite(LED, LOW);					//lab3
 	} else {
+		Serial.println("========== ON ===========");	//lab3
+		status_led=1;                   		//กำหนดค่า ตัวแปรใน status_led=1
+		digitalWrite(0, HIGH);				//lab3
 		for(int i=0; i<n; i++) {
 			Serial.print(i + 1);
 			Serial.print(": ");
@@ -62,14 +78,21 @@ void loop(void){
 			Serial.print(" (");
 			Serial.print(WiFi.RSSI(i));
 			Serial.println(")");
-			Serial.println("========== ON ===========");	//lab3
-			digitalWrite(LED, HIGH);			//lab3
-			int d = i*100
+			int d = i*1000
 			delay(d);		//กำหนดให้ความหน่วงเพิ่มขึ้นตามจำนวนไวไฟที่พบ
 		}
 	}
+	Serial.println("NOW! FOUND %d NETWORK",n);		//บอกจำนวนไวไฟที่เจอรอบสถานที่นั้น
   Serial.println("\n\n\n");
 }
 
 © 2021 GitHub, Inc.
 ```
+##  การบันทึกผลการทดลอง
+
+##  อภิปรายผลการทดลอง
+
+##  คำถามหลังการทดลอง
+**คำถาม**   หากต้องการ ทำการค้นหา WIFI ใหม่ จะต้องปฏิบัติเช่นไร
+*  **คำตอบ** 
+
