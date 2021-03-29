@@ -5,7 +5,6 @@
 #include <ESP8266WebServer.h>
 
 //ปรับเปลี่ยน ssid และ password
-
 const char* ssid = "MY-ESP8266";
 const char* password = "6210610108";
 
