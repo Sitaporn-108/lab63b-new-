@@ -19,8 +19,8 @@
   	- การใช้งาน Arduino https://www.allnewstep.com/article/205/5-arduino-
  	- C Programming Part1 https://benzneststudios.com/blog/c-programming/c-programming-basic-1/
  	- C Programming Part2 https://benzneststudios.com/blog/c-programming/c-programming-basic-2/
- 4. ตรวจสอบ IP Address 
- 	- https://www.sony.co.th/th/electronics/support/articles/00022321?fbclid=IwAR3lbNJgZ47rOSlVWhLjqRq5NgUfcgHp3XDsAORXETj9ApN_oSQWddI16Ak
+ 4. ตรวจสอบ IP Address ของ computer
+ 	- https://www.sony.co.th/th/electronics/support/articles/00022321
  
 
 
