@@ -52,6 +52,8 @@ void loop(void){
 	int n = WiFi.scanNetworks();
 	if(n == 0) {
 		Serial.println("NO NETWORK FOUND");
+		Serial.println("========== OFF ===========");		//lab3				
+		digitalWrite(LED, LOW);					//lab3
 	} else {
 		for(int i=0; i<n; i++) {
 			Serial.print(i + 1);
@@ -60,21 +62,13 @@ void loop(void){
 			Serial.print(" (");
 			Serial.print(WiFi.RSSI(i));
 			Serial.println(")");
+			Serial.println("========== ON ===========");	//lab3
+			digitalWrite(LED, HIGH);			//lab3
 			int d = i*100
 			delay(d);		//กำหนดให้ความหน่วงเพิ่มขึ้นตามจำนวนไวไฟที่พบ
 		}
 	}
-Serial.println("\n\n\n");
-//lab3
-cnt++;
-	if(cnt % 2) {
-		Serial.println("========== ON ===========");
-		digitalWrite(0, HIGH);
-	} else {
-		Serial.println("========== OFF ===========");
-		digitalWrite(0, LOW);
-	}
-	delay(500);
+  Serial.println("\n\n\n");
 }
 
 © 2021 GitHub, Inc.
