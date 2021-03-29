@@ -20,7 +20,7 @@ int cnt = 0;
 
 void setup(void){
 	Serial.begin(230400);   //เพิ่มความเร็ว
-  pinMode(LED, OUTPUT);   //lab3 และปรับเปลี่ยน Pin ที่ต่อกับ LED เป็น Output
+	pinMode(LED, OUTPUT);   //lab3 และปรับเปลี่ยน Pin ที่ต่อกับ LED เป็น Output
 
 	WiFi.mode(WIFI_STA);  //lab2
 	WiFi.disconnect();    //lab2
@@ -42,7 +42,7 @@ void setup(void){
 
 	server.begin();
 	Serial.println("HTTP server started");
-  Serial.println(WiFi.localIP());           // แสดงหมายเลข IP ของ Server
+	Serial.println(WiFi.localIP());           // แสดงหมายเลข IP ของ Server
 }
 
 void loop(void){
