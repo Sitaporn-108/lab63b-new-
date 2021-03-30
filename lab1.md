@@ -17,11 +17,11 @@
   1. เขียนโปรแกรมลงในไมโครคอนโทรเลอร์ โดยการเสียบไมโครคอนโทรเลอร์เข้าทาง serial port
   2. เข้าไปดูตัวอย่างโปรแกรม ในโฟลเดอร์ pattani
       - พิมพ์ **cd pattani** เพื่อเข้าสู่โฟลเดอร์
-      - พิมพ์ **cd 01_Serial-Monitor** *Enter* และ **vi src/main.cpp** เพื่อเข้าสู่ตัวอย่างที่ 1 จาก 9 ตัวอย่าง
+      - พิมพ์ **cd 01_Serial-Monitor** *Enter* และ **vi src/main.cpp** เพื่อเข้าสู่โปรแกรมที่ 1 จาก 9 โปรแกรม
       ![image](https://user-images.githubusercontent.com/80879429/112097457-a30f1600-8bd2-11eb-88e4-cbac8f414bb3.jpg)
       - อ่านข้อมูลรายละเอียดของโปรแกรม
       ![image](https://user-images.githubusercontent.com/80879429/112097638-f84b2780-8bd2-11eb-9a2d-d2e3cc8a6ab2.jpg)
-      - พิมพ์ **:q** เพื่อออกจากตัวอย่างที่ 1
+      - พิมพ์ **:q** เพื่อออกจากโปรแกรมที่ 1
       - *เนื้อหารายละเอียดของโปรแกรมที่แสดงใน platformio*
 ```javascript
 #include <Arduino.h>
