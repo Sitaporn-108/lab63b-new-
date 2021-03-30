@@ -29,6 +29,8 @@
  1. นำไมโครคอนโทรเลอร์ เสียบเข้าไปใน USB serial port
  2. เข้าไปในโฟลเดอร์ pattani
 	- พิมพ์ **cd pattani** เพื่อเข้าสู่โฟลเดอร์
+![image](https://user-images.githubusercontent.com/80879429/113065867-bf6b0e00-91e3-11eb-9243-a90494902fbb.png)
+
  3. เข้าไปในโปรแกรมทั้งสาม เพื่ออ่านและทำความเข้าใจรายละเอียด
 	- พิมพ์ **cd 02_Scan-Wifi** *Enter*
 	- พิมพ์ **cd 03_Output-Port** *Enter*
