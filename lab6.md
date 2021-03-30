@@ -14,7 +14,7 @@
     https://youtu.be/T26DVHePlTs
 
 ##  วิธีการทำการทดลอง
- 1. พิมพ์ **pwd** เพื่อเข้าสู่โปรแกรม 06_Wifi-AP-Web-Server  และพิมพ์ **vi src/main.cpp** เพื่อเข้าสู่โปรแกรม
+ 1. พิมพ์ **pwd** เพื่อเข้าสู่โปรแกรม **06_Wifi-AP-Web-Server**  และพิมพ์ **vi src/main.cpp** เพื่อเข้าสู่โปรแกรม
   	- ![image](https://user-images.githubusercontent.com/80879429/112264336-52b3b900-8ca3-11eb-91c4-ce4d915188b9.png)
   	- เมื่อเข้าสู่โปรแกรม ต้องทำการกำหนดชื่อของWIFI รวมถึงตั้งรหัสผ่าน
   	- เตรียม WebServer และสร้าง Access point 
