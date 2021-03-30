@@ -43,23 +43,23 @@
 		- #include <name of header file> : การบอกให้นำเฮดเดอร์ไฟล์ทั้งสาม มาร่วมในการแปลโปรแกรม
 		- const char* ssid : ชื่อไวไฟ
 		- const char* password : รหัสผ่านของไวไฟ
-		- IPAddress local_ip : IP Address
-		- IPAddress gateway : Default Gateway
-		- IPAddress subnet : Subnet Mask
+		- IPAddress local_ip(...,...,...,...) : IP Address
+		- IPAddress gateway(...,...,...,...) : Default Gateway
+		- IPAddress subnet(...,...,...,...) : Subnet Mask
 		- unsigned char status_led : กำหนดตัวแปรที่เก็บค่าสถานะของ LED
-		- ESP8266WebServer server(80) : กำหนดให้งาน server ที่ port 80
+		- ESP8266WebServer server(...) : กำหนดให้งาน server ที่ port ...
 	- ส่วนที่ 2 Set up
-		- Serial.begin() : กำหนดความเร็วของการ Set up 
+		- Serial.begin(...) : กำหนดความเร็วของการ Set up 
 		- pinMode(0, OUTPUT) : กำหนด Port 0 ของ Output หรือ Port ... ของ Input
 		- WiFi.mode(WIFI_STA) : การเปิดไวไฟภายในตัวไมโครคอนโทรเลอร์
 		- WiFi.softAP(ssid, password) : การรันค่า ssid, password
 		- WiFi.softAPConfig(local_ip, gateway, subnet) : การรันค่า local_ip, gateway, subnet
-		- delay() : ความหน่วงเวลาของการ Set up
+		- delay(...) : ความหน่วงเวลาของการ Set up
 
 	- ส่วนที่ 3 loop
 		- WiFi.scanNetworks() : จำนวน Network หรือผลของการสแกนไวไฟรอบๆ
-		- digitalWrite() : อ่านค่าของ Port 0 ผลที่ได้จะมีค่าแค่ Low or High
-		- delay() : ความหน่วงเวลาของการสแกนหาไวไฟและความหน่วงเวลาของการแชร์ไวไฟ
+		- digitalWrite(0,...) : อ่านค่าของ Port 0 ผลที่ได้จะมีค่าแค่ Low or High
+		- delay(...) : ความหน่วงเวลาของการสแกนหาไวไฟและความหน่วงเวลาของการแชร์ไวไฟ
 	- พิมพ์ **:q** เพื่อออกจากโปรแกรมที่ 7
 	- *เนื้อหารายละเอียดของโปรแกรมที่แสดงใน platformio*
 
