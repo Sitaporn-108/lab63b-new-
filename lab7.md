@@ -26,6 +26,41 @@
  	- https://www.sony.co.th/th/electronics/support/articles/00022321
  
 ##  วิธีการทำการทดลอง
+ 1. นำไมโครคอนโทรเลอร์ เสียบเข้าไปใน USB serial port
+ 2. เข้าไปในโฟลเดอร์ pattani
+	- พิมพ์ **cd pattani** เพื่อเข้าสู่โฟลเดอร์
+ 3. เข้าไปในโปรแกรมทั้งสาม เพื่ออ่านและทำความเข้าใจรายละเอียด
+	- พิมพ์ **cd 02_Scan-Wifi** *Enter*
+	- พิมพ์ **cd 03_Output-Port** *Enter*
+	- พิมพ์ **cd 06_Wifi-AP-Web-Server** *Enter*
+ 4. นำทุกตัวอย่างโปรแกรมมาพัฒนา  เป็นโปรแกรมตัวอย่างที่ 7 
+	- พิมพ์ **cd 07_Share-Scan-Wifi** *Enter*
+	- พิมพ์ **vi src/main.cpp** เพื่อเข้าสู่โปรแกรม
+ 5. อ่านข้อมูลและรายละเอียดของ Source code โปรแกรมที่ 7
+	- ส่วนที่ 1 ข้อมูลเบื้องต้น 
+		- #include <name of header file> : การบอกให้นำเฮดเดอร์ไฟล์ทั้งสาม มาร่วมในการแปลโปรแกรม
+		- const char* ssid : ชื่อไวไฟ
+		- const char* password : รหัสผ่านของไวไฟ
+		- IPAddress local_ip : IP Address
+		- IPAddress gateway : Default Gateway
+		- IPAddress subnet : Subnet Mask
+		- unsigned char status_led : กำหนดตัวแปรที่เก็บค่าสถานะของ LED
+		- ESP8266WebServer server(80) : กำหนดให้งาน server ที่ port 80
+	- ส่วนที่ 2 Set up
+		- Serial.begin() : กำหนดความเร็วของการ Set up 
+		- pinMode(0, OUTPUT) : กำหนด Port 0 ของ Output หรือ Port ... ของ Input
+		- WiFi.mode(WIFI_STA) : การเปิดไวไฟภายในตัวไมโครคอนโทรเลอร์
+		- WiFi.softAP(ssid, password) : การรันค่า ssid, password
+		- WiFi.softAPConfig(local_ip, gateway, subnet) : การรันค่า local_ip, gateway, subnet
+		- delay() : ความหน่วงเวลาของการ Set up
+
+	- ส่วนที่ 3 loop
+		- WiFi.scanNetworks() : จำนวน Network หรือผลของการสแกนไวไฟรอบๆ
+		- digitalWrite() : อ่านค่าของ Port 0 ผลที่ได้จะมีค่าแค่ Low or High
+		- delay() : ความหน่วงเวลาของการสแกนหาไวไฟและความหน่วงเวลาของการแชร์ไวไฟ
+	- พิมพ์ **:q** เพื่อออกจากโปรแกรมที่ 7
+	- *เนื้อหารายละเอียดของโปรแกรมที่แสดงใน platformio*
+
 ```javascript
 #include <Arduino.h>
 #include <ESP8266WiFi.h>
@@ -99,6 +134,8 @@ void loop(void){
 		}
 	}
 	Serial.println("NOW! FOUND %d NETWORK",n);		//บอกจำนวนไวไฟที่เจอรอบสถานที่นั้น
+  
+  delay(1000)
   Serial.println("\n\n\n");
 }
 
